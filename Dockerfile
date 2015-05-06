@@ -16,7 +16,7 @@ usermod -g 100 nobody && \
 
 # update apt and install build area dependencies
 apt-get update && \
-apt-get install -y unzip unrar wget cmake git-core build-essential autoconf libtool pkg-config ruby-dev && \
+apt-get install -y unzip unrar wget cmake git python-dev build-essential autoconf libtool pkg-config ruby-dev && \
 gem install fpm && \
 
 # clean up
