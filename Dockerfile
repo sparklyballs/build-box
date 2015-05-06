@@ -32,10 +32,10 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
 mkdir -p /root/build-area /root/project/debout  && \
 
 # export deb script
-echo "#!/bin/bash" > /root/start.sh && \
-echo "cp /root/project/debout/*.deb /deb-out/" >> /root/start.sh && \
-echo "chown -R nobody:users /deb-out" >> /root/start.sh && \
-echo "chmod 755 -R /deb-out" >> /root/start.sh && \
-chmod +x /root/start.sh
+echo "#!/bin/bash" > /root/debout.sh && \
+echo "cp /root/project/debout/*.deb /deb-out/" >> /root/debout.sh && \
+echo "chown -R nobody:users /deb-out" >> /root/debout.sh && \
+echo "chmod 755 -R /deb-out" >> /root/debout.sh && \
+chmod +x /root/debout.sh
 
 
